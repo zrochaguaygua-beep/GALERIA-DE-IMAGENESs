@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título dentro del artículo */
+#titulo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.titulo {
+    font-size: 2em;
+    color: #222;
+}
+
+/* Imagen centrada horizontalmente */
+#imagen-centrada {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#imagen-centrada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contenido de los párrafos */
+.contenido {
+    padding: 20px;
+    text-align: center;
+}
+
+.texto {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#especial {
+    color: red;
+    font-weight: bold;
+}
+
+/* Galería */
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+}
+
+#item-galeria-1 img,
+#item-galeria-2 img,
+#item-galeria-3 img,
+#item-galeria-4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#item-galeria-1 img:hover,
+#item-galeria-2 img:hover,
+#item-galeria-3 img:hover,
+#item-galeria-4 img:hover {
+    transform: scale(1.1);
+}
